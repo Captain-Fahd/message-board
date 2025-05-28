@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('./static/Montserrat-Regular.ttf');
+}
+
+body{
+    font-family: 'Montserrat Regular', serif;
+    background-color: oklch(67% 0.134 242.749);
+}
+form {
+    margin: auto;
+    margin-top: 10rem;
+    background-color:  #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 1rem;
+    width: 45%;
+    height: 35%;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.message input {
+    margin-top: 0.5rem;
+    width: 20rem;
+    height: 4rem;
+    padding: 0;
+}

@@ -26,7 +26,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    background-color: oklch(95.6% 0.045 203.388);
+    background-color: oklch(67% 0.134 242.749);
     }
 
 .body-container {
@@ -45,12 +45,21 @@ body {
     bottom: 5rem;
     text-decoration: none;
     border-radius: 100%;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
     color: white;
-    background-color: oklch(54.6% 0.245 262.881);
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: oklch(30% 0.066 243.157);
+    transition: all 0.5s;
+}
+
+.new-btn:hover {
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 3.5rem;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
 .message-board {
