@@ -92,3 +92,37 @@ body {
     height: auto;
     transition: width 0.5s , height 0.5s , transform 0.5s ;
 }
+
+.message-text {
+    text-overflow: ellipsis;
+}
+.date-more {
+    display: flex;
+    justify-content: space-between;
+}
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+    border-radius: 60%;
+    background-color: oklch(40% 0.086 243.157);
+    position: relative;
+    top: 1.7rem;
+    right: 1rem;
+}
+
+.more p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    bottom: 4px;
+}

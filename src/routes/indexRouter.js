@@ -1,13 +1,13 @@
 //Dummy Variables
 const messages = [
     {
-        text: "Hi",
-        user: "Memon",
+        text: "Hi, I am John",
+        user: "John Doe",
         added: new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'numeric', day: 'numeric'})
     },
     {
-        text: "Hi",
-        user: "AliBali",
+        text: "Hi, I am Jane",
+        user: "Jane Doe",
         added: new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'numeric', day: 'numeric'})
     }
 ];
@@ -40,6 +40,10 @@ indexRouter.post("/new", (req, res) => {
        added: new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'numeric', day: 'numeric'})
    });
    res.redirect('/');
+})
+
+indexRouter.get("/message/:id", (req, res) => {
+    res.render("details", {message: messages[req.params.id]});
 })
 //Exports
 module.exports = indexRouter;
