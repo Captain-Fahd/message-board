@@ -1,4 +1,85 @@
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('./static/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('./static/Montserrat-Regular.ttf');
+}
 
-nav {
+* {
+    font-family: 'Montserrat Regular', serif;
+}
+.navbar {
     text-align: center;
+    background-color: #ffffff;
+    width: 80%;
+    border: 1px black solid;
+    border-radius: 6rem;
+    margin-top: 0.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: oklch(95.6% 0.045 203.388);
+    }
+
+.body-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.new-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    text-decoration: none;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: oklch(54.6% 0.245 262.881);
+}
+
+.message-board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.messages {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    border: 1px black solid;
+    border-radius: 1rem;
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: width 0.5s , height 0.5s , transform 0.5s ;
+}
+
+.messages:hover {
+    width: 37%;
+    height: auto;
+    transition: width 0.5s , height 0.5s , transform 0.5s ;
 }
