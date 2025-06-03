@@ -23,9 +23,7 @@ function formRedirect() {
 
 
 //Main Route Paths
-indexRouter.get("/", (req, res) => {
-    res.render('index', {title: title, messages: messages, formRedirect: formRedirect});
-});
+indexRouter.get("/", messageController.getMessages);
 
 indexRouter.get("/new", (req, res) => {
     res.render('form');
