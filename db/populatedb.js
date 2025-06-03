@@ -26,7 +26,7 @@ async function main() {
                     id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
                     username VARCHAR(225),
                     message VARCHAR(225),
-                    added TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+                    added DATE NOT NULL DEFAULT CURRENT_DATE
                 );`;
 
         console.log("Table successfully created\ndone...");

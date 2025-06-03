@@ -2,10 +2,10 @@
   "name": "message-board",
   "version": "1.0.0",
   "description": "This is a simple message board project in which users can post messages publicly, similar to a forum.",
-  "main": "src/App.js",
+  "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/db/populatedb.js"
+    "start": "node ./db/populatedb.js"
   },
   "repository": {
     "type": "git",
