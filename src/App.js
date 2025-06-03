@@ -4,6 +4,7 @@ const app = express();
 const PORT = 8080;
 const path = require('node:path');
 const assetsPath = path.join(__dirname, 'public');
+require('dotenv').config();
 //Middleware parser
 app.use(express.urlencoded({ extended: true }));
 
