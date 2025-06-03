@@ -15,7 +15,9 @@ async function showDetails(id) {
     return rows;
 }
 
-async function deleteMessage() {}
+async function deleteMessage(id) {
+    await pool.query("DELETE FROM messages WHERE id = $1", [id]);
+}
 
 module.exports = {
     getMessages,

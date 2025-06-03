@@ -13,10 +13,8 @@ function formRedirect() {
 //Main Route Paths
 indexRouter.get("/", messageController.getMessages);
 indexRouter.get("/new", messageController.createMessageGet);
-
-
 indexRouter.post("/new", messageController.createMessagePost);
-
-indexRouter.get("/message/:id", messageController.showDetails)
+indexRouter.get("/message/:id", messageController.showDetails);
+indexRouter.get("/delete/:id", messageController.deleteMessage);
 //Exports
 module.exports = indexRouter;
