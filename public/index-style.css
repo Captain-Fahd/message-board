@@ -64,13 +64,15 @@ body {
 
 .message-board {
     display: flex;
-    flex-wrap: wrap;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 .messages {
@@ -80,7 +82,7 @@ body {
     margin: 0.5rem;
     border: 1px black solid;
     border-radius: 1rem;
-    width: 35%;
+    width: 85%;
     height: auto;
     padding: 1rem;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -88,7 +90,7 @@ body {
 }
 
 .messages:hover {
-    width: 37%;
+    width: 90%;
     height: auto;
     transition: width 0.5s , height 0.5s , transform 0.5s ;
 }
